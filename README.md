@@ -35,7 +35,7 @@ Le projet repose sur une **architecture Jamstack / Frontend Pur**. L'interface R
 ## 5-Installations:
 ### a)-Cloner le dépot :
 ``` bash
- https://xxxxxxxxxxxxxxxxxxxx
+  https://github.com/NaivoRZK/moi.git
 ```
 ### b) Placez-vous dans le dossier du projet.  /site_andry :
 ``` bash
