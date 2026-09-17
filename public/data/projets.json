@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "titre": "Automatisation des Processus Logistiques",
+    "entreprise": "Groupe VISEO",
+    "dateDebut": "Juillet 2026",
+    "dateFin": "Présent",
+    "lieu": "Antananarivo, Madagascar",
+    "categorie": "Automatisation",
+    "contexte": "Équipe de 6 personnes. Collaboration avec le Département IT et les responsables Logistique et Opérations.",
+    "problematique": "Les procédures manuelles de saisie et de vérification des données logistiques engendraient des erreurs fréquentes et une perte de temps considérable.",
+    "solution": "Automatisation des flux d'information avec validations systématiques, mise en place d'un système d'inventaire permanent et d'échantillonnage automatisé.",
+    "impacts": [
+      { "metrique": "-60%", "label": "de temps sur la saisie et vérification des données" },
+      { "metrique": "-40%", "label": "d'erreurs manuelles sur le suivi de stock" },
+      { "metrique": "+50%", "label": "d'efficacité sur les mouvements en dépôt" }
+    ],
+    "choixTechniques": [
+      "Cartographie complète des processus (réception, stockage, contrôle d'accès, inventaires)",
+      "Déclencheurs automatiques (alertes mail/notification, génération de documents, sync ERP)",
+      "Modules de contrôle surprise et règles d'échantillonnage automatique"
+    ],
+    "technologies": ["Automatisation des flux", "Système d'inventaire", "Échantillonnage automatisé", "ERP"]
+  },
+  {
+    "id": 2,
+    "titre": "Migration Odoo 13 vers Odoo 19",
+    "entreprise": "Groupe VISEO",
+    "dateDebut": "Septembre 2025",
+    "dateFin": "Juillet 2026",
+    "lieu": "Antananarivo, Madagascar",
+    "categorie": "Migration ERP",
+    "contexte": "Équipe de 13 personnes. Projet stratégique initié par la Direction Générale (PDG). Coordination avec IT et responsables métiers.",
+    "problematique": "L'ancien ERP (Odoo 13) était obsolète avec des performances dégradées et un support pérenne compromis.",
+    "solution": "Migration complète vers Odoo 19 avec architecture decoupled (Next.js + FastAPI) pour décharger l'ERP des calculs complexes.",
+    "impacts": [
+      { "metrique": "-74%", "label": "du temps de réponse des API (350ms → 90ms)" },
+      { "metrique": "-45%", "label": "de latence globale des flux" },
+      { "metrique": "100%", "label": "de continuité de service lors de la bascule" }
+    ],
+    "choixTechniques": [
+      "Modernisation globale : nouvel ORM, traçabilité native, support pérenne",
+      "Restructuration du module Stock (mouvements, emplacements, inventaire temps réel)",
+      "Refonte des modules Traités, Fiches Techniques, Sondage Marketing & E-learning",
+      "FastAPI pour calculs complexes en asynchrone, Next.js pour UI réactive"
+    ],
+    "technologies": ["Python", "Next.js", "FastAPI", "Odoo 13", "Odoo 19", "Architecture asynchrone"]
+  },
+  {
+    "id": 3,
+    "titre": "Plateforme eLearning Odoo Slides",
+    "entreprise": "Groupe VISEO",
+    "dateDebut": "Août 2025",
+    "dateFin": "Présent",
+    "lieu": "Antananarivo, Madagascar",
+    "categorie": "Développement Fullstack",
+    "contexte": "Équipe de 5 personnes. Collaboration avec IT, RH/Formateurs et équipe d'Audit pour les tests fonctionnels.",
+    "problematique": "Les formations en présentaient un coût logistique élevé et les formateurs perdaient trop de temps à organiser les parcours.",
+    "solution": "Extension du module Odoo Slides en plateforme interactive slide-par-slide avec onboarding automatisé.",
+    "impacts": [
+      { "metrique": "-85%", "label": "de temps d'organisation par les formateurs" },
+      { "metrique": "-50%", "label": "de charge sur les formations en présentiel" },
+      { "metrique": "-30%", "label": "de latence de synchronisation inter-apps" }
+    ],
+    "choixTechniques": [
+      "Navigation guidée slide-par-slide avec validation dynamique",
+      "Logique métier Python et UI/JS réactive pour expérience fluide",
+      "Capture et transfert automatique des parcours v13 vers v17",
+      "Onboarding & provisioning automatisé via API (100% autonome)"
+    ],
+    "technologies": ["Python", "JavaScript", "Odoo 17", "Odoo Slides", "eLearning", "Cron Jobs", "API"]
+  },
+  {
+    "id": 4,
+    "titre": "PWA Mobile Scan Codes-Barres",
+    "entreprise": "Groupe VISEO",
+    "dateDebut": "Mars 2025",
+    "dateFin": "Présent",
+    "lieu": "Antananarivo, Madagascar",
+    "categorie": "Fullstack & DevOps",
+    "contexte": "Équipe de 6 personnes. Coordination avec IT Infrastructure et accompagnement Logistique.",
+    "problematique": "La recherche d'articles en dépôt était lente et l'inventaire prenait trop de temps avec des données non synchronisées.",
+    "solution": "PWA React.js + Capacitor avec scan mobile, API Django pour les calculs complexes, déploiement Docker/Nginx avec VPN.",
+    "impacts": [
+      { "metrique": "-25%", "label": "du temps de recherche d'articles" },
+      { "metrique": "-15%", "label": "du temps d'inventaire" },
+      { "metrique": "-35%", "label": "de FCP (1200ms → 780ms)" }
+    ],
+    "choixTechniques": [
+      "PWA multiplateforme avec accès caméra natif pour scan codes-barres",
+      "API REST Django pour isoler les calculs complexes sans surcharger l'ERP",
+      "Odoo 13 comme Source Unique de Vérité (SSOT) pour le stock",
+      "Nginx + Docker + tunnel VPN/Proxy pour dépôts distants"
+    ],
+    "technologies": ["React.js", "Capacitor", "PWA", "Django", "PostgreSQL", "Odoo 13", "Nginx", "Docker", "VPN"]
+  },
+  {
+    "id": 5,
+    "titre": "Application web de gestion des membres",
+    "entreprise": "Techzara Madagascar",
+    "dateDebut": "2023",
+    "dateFin": "Présent",
+    "lieu": "Antananarivo, Madagascar",
+    "categorie": "Bénévolat",
+    "contexte": "Bénévolat en tant que Développeur Backend & Lead technique. Encadrement de l'équipe technique pour l'atteinte des objectifs et le respect des livrables.",
+    "problematique": "Nécessité d'une application web centralisée pour gérer les membres de l'association avec des performances optimales.",
+    "solution": "Développement Backend avec Django et PostgreSQL, optimisation des requêtes et mise en place de tests automatisés.",
+    "impacts": [
+      { "metrique": "-52%", "label": "de temps de réponse des requêtes" },
+      { "metrique": "100%", "label": "de couverture des tests automatisés" },
+      { "metrique": "Lead", "label": "Encadrement de l'équipe technique" }
+    ],
+    "choixTechniques": [
+      "Développement Backend avec Django et PostgreSQL",
+      "Optimisation des requêtes PostgreSQL (-52% temps de réponse)",
+      "Tests automatisés avec DjangoTestCase pour la fiabilité du code"
+    ],
+    "technologies": ["Python", "Django", "PostgreSQL", "DjangoTestCase", "Backend", "Leadership"]
+  }
+]

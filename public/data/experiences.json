@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "poste": "Ingénieur Logiciel",
+    "entreprise": "Groupe VISEO",
+    "dateDebut": "Mars 2025",
+    "dateFin": "Présent",
+    "lieu": "Antananarivo, Madagascar",
+    "type": "CDI",
+    "sousTitre": "Développeur Automatisation de Processus",
+    "equipe": {
+      "composition": "1 Chef de projet, 4 Développeurs (dont moi-même sur la partie automatisation & intégration) et 1 Assistante Projet",
+      "collaboration": "Coordination étroite avec le Département IT (Infrastructure, Réseaux & Serveurs) et travail quotidien sur le terrain avec les responsables du Département Logistique et Opérations"
+    },
+    "impacts": [
+      { "metrique": "-60%", "label": "de temps passé sur la saisie et la vérification des données logistiques", "details": "grâce à l'automatisation des flux d'information et aux validations systématiques" },
+      { "metrique": "-40%", "label": "d'erreurs manuelles sur le suivi de stock", "details": "via la mise en place d'un système d'inventaire permanent et d'échantillonnage automatisé" },
+      { "metrique": "+50%", "label": "d'efficacité sur le traitement des mouvements et des entrées/sorties en dépôt", "details": "grâce à la numérisation des processus" }
+    ],
+    "choixArchitecturaux": [
+      {
+        "titre": "Modélisation & Automatisation des Workflows Logistiques",
+        "description": "Cartographie complète des processus du groupe (réception, stockage, contrôle d'accès parc/véhicules, inventaires) pour éliminer les goulots d'étranglement"
+      },
+      {
+        "titre": "Ingénierie des Processus & Intégrations sur Mesure",
+        "description": "Remplacer les procédures sur papier et saisies doubles par des déclencheurs automatiques (alertes mail/notification, génération automatique de documents, synchronisation ERP) pour garantir la précision des données en temps réel"
+      },
+      {
+        "titre": "Système d'Inventaire & Contrôle Permanent",
+        "description": "Développement de modules de contrôle surprise et de règles d'échantillonnage automatique pour fiabiliser l'état des stocks sans interrompre l'activité logistique"
+      }
+    ],
+    "technologies": ["Automatisation des flux", "Système d'inventaire permanent", "Échantillonnage automatisé", "Alertes mail/notification", "Génération automatique de documents", "Synchronisation ERP"]
+  },
+  {
+    "id": 2,
+    "poste": "Ingénieur Migration Odoo",
+    "entreprise": "Groupe VISEO",
+    "dateDebut": "Septembre 2025",
+    "dateFin": "Juillet 2026",
+    "lieu": "Antananarivo, Madagascar",
+    "type": "CDI",
+    "sousTitre": "Migration Odoo (Python, Next.js, FastAPI)",
+    "equipe": {
+      "composition": "1 Chef de projet, 4 Développeurs Fullstack & Odoo (dont 2 Seniors, 1 Développeuse, et moi-même), 4 Data Engineers & Scientists, 1 Ingénieur en Migration de Données, et 1 Assistante Projet",
+      "collaboration": "Projet stratégique initié sur proposition de la Direction Générale (PDG). Coordination avec le Département IT (Infrastructure, Réseaux & Serveurs) et les responsables métiers"
+    },
+    "impacts": [
+      { "metrique": "-74%", "label": "du temps de réponse des API", "details": "de 350 ms à 90 ms grâce à l'architecture asynchrone de FastAPI pour les traitements de données lourds" },
+      { "metrique": "-45%", "label": "de latence globale des flux", "details": "via la suppression des requêtes redondantes et l'optimisation de la mise en cache" },
+      { "metrique": "100%", "label": "de continuité de service", "details": "garantie lors de la bascule vers Odoo 19 pour l'ensemble des périmètres métiers critiques" }
+    ],
+    "choixArchitecturaux": [
+      {
+        "titre": "Migration Odoo 13 vers Odoo 19 (Vision Direction)",
+        "description": "Modernisation globale de l'ERP pour bénéficier des gains de vitesse du nouvel ORM, de la traçabilité native et d'un support pérenne"
+      },
+      {
+        "titre": "Spécialisation Module Stock (Cœur d'expertise)",
+        "description": "Restructuration complète de la logique des mouvements de stock, optimisation de la hiérarchie des emplacements/rayons et sécurisation du suivi d'inventaire en temps réel"
+      },
+      {
+        "titre": "Refonte des Modules Métiers",
+        "description": "Traités (Pré-paies) : Adaptation des moteurs de calcul et synchronisation des flux financiers. Fiches Techniques : Migration de la matrice produit et des spécifications techniques des véhicules. Sondage Marketing & E-learning : Migration et modernisation des modules d'évaluation client et de formation interne"
+      },
+      {
+        "titre": "Architecture Decoupled (Next.js + FastAPI)",
+        "description": "Découplage stratégique pour décharger Odoo — FastAPI pour le traitement des calculs complexes et requêtes de stock en asynchrone, et Next.js pour offrir une interface utilisateur réactive"
+      }
+    ],
+    "technologies": ["Python", "Next.js", "FastAPI", "Odoo 13", "Odoo 19", "ORM Odoo", "Architecture asynchrone"]
+  },
+  {
+    "id": 3,
+    "poste": "Développeur Odoo",
+    "entreprise": "Groupe VISEO",
+    "dateDebut": "Août 2025",
+    "dateFin": "Présent",
+    "lieu": "Antananarivo, Madagascar",
+    "type": "CDI",
+    "sousTitre": "Développeur Odoo (Python, JS)",
+    "equipe": {
+      "composition": "1 Chef de projet, 4 Développeurs (1 Développeur Front-end, 1 Développeuse Fullstack, moi-même en tant que Développeur Fullstack & Odoo, 1 Développeur Senior Odoo) et 1 Assistante Projet",
+      "collaboration": "Coordination avec le Département IT (Infrastructure, Réseaux & Serveurs), accompagnement des équipes RH/Formateurs (utilisateurs métier) et travail étroit avec l'équipe d'Audit pour les tests fonctionnels et la validation des parcours"
+    },
+    "impacts": [
+      { "metrique": "-85%", "label": "de temps consacré à l'organisation par les formateurs", "details": "grâce au principe de création unique des parcours de formation, leur permettant de se recentrer sur leurs tâches à forte valeur ajoutée" },
+      { "metrique": "-50%", "label": "de charge sur les formations en présentiel", "details": "en rendant l'apprentissage en ligne autonome, flexible et accessible à tout moment par les collaborateurs" },
+      { "metrique": "-30%", "label": "de latence de synchronisation inter-applications", "details": "grâce à l'optimisation des flux de données via des Cron Jobs et des API" }
+    ],
+    "choixArchitecturaux": [
+      {
+        "titre": "Personnalisation Odoo Slides / eLearning (Odoo 17)",
+        "description": "Extension et sur-mesure du module natif pour le transformer en une plateforme interactive slide-par-slide (navigation guidée, validation dynamique), parfaitement ajustée aux besoins spécifiques de l'entreprise"
+      },
+      {
+        "titre": "Développement Fullstack Odoo (Python & JavaScript)",
+        "description": "Conception de la logique métier côté serveur et personnalisation UI/UX pour garantir une expérience apprenant fluide et réactive"
+      },
+      {
+        "titre": "Module de Capture d'Actions & Synchronisation (v13 vers v17)",
+        "description": "Développement d'un composant de capture et de transfert automatique des parcours et historiques de formation entre la v13 et la v17"
+      },
+      {
+        "titre": "Onboarding & Provisioning Automatisé",
+        "description": "Automatisation de la création de comptes et de l'attribution des modules via API pour un parcours d'intégration 100% autonome"
+      }
+    ],
+    "technologies": ["Python", "JavaScript", "Odoo 17", "Odoo Slides", "eLearning", "Cron Jobs", "API"]
+  },
+  {
+    "id": 4,
+    "poste": "Développeur Fullstack & DevOps",
+    "entreprise": "Groupe VISEO",
+    "dateDebut": "Mars 2025",
+    "dateFin": "Présent",
+    "lieu": "Antananarivo, Madagascar",
+    "type": "CDI",
+    "sousTitre": "Fullstack & DevOps",
+    "equipe": {
+      "composition": "1 Manager, 2 Développeurs Fullstack (dont moi, assurant également le rôle DevOps), 2 Développeurs Senior Odoo, 1 Assistante Projet",
+      "collaboration": "Coordination étroite avec le Département IT (équipes Infrastructure, Réseaux & Serveurs) et accompagnement du département Logistique (utilisateurs métier)"
+    },
+    "impacts": [
+      { "metrique": "-25%", "label": "du temps de recherche d'articles en dépôt", "details": "grâce au repérage d'emplacements et au scan mobile" },
+      { "metrique": "-15%", "label": "du temps d'inventaire", "details": "via la centralisation et la synchronisation des stocks en temps réel" },
+      { "metrique": "-35%", "label": "de FCP", "details": "réduit de 1 200 ms à 780 ms ; temps de réponse API réduit de 250 ms à 150 ms (-40%)" }
+    ],
+    "choixArchitecturaux": [
+      {
+        "titre": "React.js + Capacitor",
+        "description": "Déploiement d'une PWA multiplateforme réactive avec accès natif à la caméra pour scanner rapidement les codes-barres sur le terrain à moindre coût"
+      },
+      {
+        "titre": "Django + PostgreSQL",
+        "description": "API REST haute performance conçue pour isoler les calculs complexes et accélérer la recherche d'articles sans surcharger l'ERP"
+      },
+      {
+        "titre": "Odoo 13 (Source Unique de Vérité)",
+        "description": "Utilisation comme SSOT pour la gestion et la persistance globale du stock (Véhicules, Produits, Pièces)"
+      },
+      {
+        "titre": "Nginx, Docker & VPN",
+        "description": "Hébergement sous Nginx et sécurisation des échanges d'inventaires entre les dépôts distants via un tunnel VPN/Proxy dédié"
+      }
+    ],
+    "technologies": ["React.js", "Capacitor", "PWA", "Django", "PostgreSQL", "Odoo 13", "Nginx", "Docker", "VPN"]
+  },
+  {
+    "id": 5,
+    "poste": "Membre actif (Développeur Backend & Lead)",
+    "entreprise": "Techzara Madagascar",
+    "dateDebut": "2023",
+    "dateFin": "Présent",
+    "lieu": "Antananarivo, Madagascar",
+    "type": "Bénévolat",
+    "sousTitre": "Backend Development & Leadership technique",
+    "equipe": {
+      "composition": "Équipe technique Techzara Madagascar",
+      "collaboration": "Encadrement de l'équipe technique pour l'atteinte des objectifs et le respect des livrables"
+    },
+    "impacts": [
+      { "metrique": "-52%", "label": "de temps de réponse des requêtes", "details": "optimisation des requêtes PostgreSQL sur l'application de gestion des membres" },
+      { "metrique": "100%", "label": "de couverture des tests automatisés", "details": "mise en place de tests unitaires et d'intégration avec DjangoTestCase" }
+    ],
+    "choixArchitecturaux": [
+      {
+        "titre": "Application web de gestion des membres",
+        "description": "Développement Backend avec Django et PostgreSQL pour la gestion des membres de l'association"
+      },
+      {
+        "titre": "Optimisation des performances",
+        "description": "Optimisation des requêtes PostgreSQL avec réduction de 52% du temps de réponse"
+      },
+      {
+        "titre": "Tests automatisés",
+        "description": "Mise en place de tests automatisés avec DjangoTestCase pour garantir la fiabilité du code"
+      }
+    ],
+    "technologies": ["Python", "Django", "PostgreSQL", "DjangoTestCase", "Backend", "Leadership"]
+  }
+]
