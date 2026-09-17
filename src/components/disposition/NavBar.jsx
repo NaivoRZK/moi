@@ -1,27 +1,34 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 
 export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const location = useLocation();
 
     const links = [
-        { to: '/', label: 'Accueil' },
-        { to: '/projets', label: 'Projets' },
-        { to: '/experiences', label: 'Expériences' },
-        { to: '/contacts', label: 'Contact' },
+        { to: '#accueil', label: 'Accueil' },
+        { to: '#projets', label: 'Projets' },
+        { to: '#experiences', label: 'Expériences' },
+        { to: '#services', label: 'Services' },
+        { to: '#contacts', label: 'Contact' },
     ];
+
+    const handleClick = (e, href) => {
+        e.preventDefault();
+        setMenuOpen(false);
+        const el = document.querySelector(href);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <nav className="bg-[#F9FAFB] fixed w-full z-20 top-0 start-0 border-b border-gray-200">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <Link to="/" className="flex items-center space-x-3">
+                <a href="#accueil" onClick={(e) => handleClick(e, '#accueil')} className="flex items-center space-x-3">
                     <span className="self-center text-xl font-semibold text-[#222222] whitespace-nowrap">
                         Andry.
                     </span>
-                </Link>
+                </a>
 
-                {/* Hamburger button */}
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
                     type="button"
@@ -35,23 +42,17 @@ export default function NavBar() {
                     </svg>
                 </button>
 
-                {/* Menu */}
                 <div className={`${menuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-solid">
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-200 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
                         {links.map((link) => (
                             <li key={link.to}>
-                                <Link
-                                    to={link.to}
-                                    onClick={() => setMenuOpen(false)}
-                                    className={`block py-2 px-3 rounded-lg md:p-0 transition-colors ${
-                                        location.pathname === link.to
-                                            ? 'text-[#4A6FA5] bg-blue-50 md:bg-transparent md:text-[#4A6FA5]'
-                                            : 'text-[#333333] hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#4A6FA5]'
-                                    }`}
-                                    aria-current={location.pathname === link.to ? 'page' : undefined}
+                                <a
+                                    href={link.to}
+                                    onClick={(e) => handleClick(e, link.to)}
+                                    className="block py-2 px-3 rounded-lg md:p-0 transition-colors text-[#333333] hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#4A6FA5]"
                                 >
                                     {link.label}
-                                </Link>
+                                </a>
                             </li>
                         ))}
                     </ul>
